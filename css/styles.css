@@ -321,3 +321,52 @@ h2 {
     transform: translateY(0);
   }
 }
+
+/* === Carrusel tamaño uniforme con recorte === */
+#hero {
+  border: 3px solid #FFD700;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Alto consistente usando aspect-ratio (moderno) */
+#hero .carousel-inner,
+#hero .carousel-item {
+  aspect-ratio: 21 / 7;
+}
+
+/* Fallback si el navegador no soporta aspect-ratio */
+@supports not (aspect-ratio: 1 / 1) {
+  #hero .carousel-item {
+    height: 420px;
+  }
+}
+
+/* Las imágenes llenan el área y se recortan sin deformar */
+#hero .carousel-item>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Ajustes responsivos de altura (si usas el fallback) */
+@media (max-width: 992px) {
+  @supports not (aspect-ratio: 1 / 1) {
+    #hero .carousel-item {
+      height: 360px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  @supports not (aspect-ratio: 1 / 1) {
+    #hero .carousel-item {
+      height: 260px;
+    }
+  }
+}
