@@ -1,0 +1,323 @@
+:root {
+  --dlux-primary: #111827;
+  --dlux-accent: #b91c1c;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.logo-box {
+  width: 240px;
+  height: 70px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: .5rem;
+}
+
+.product-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+.branch-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+h2 {
+  letter-spacing: .5px;
+}
+
+/* mimic wireframe captions */
+.card .ratio {
+  background: #f8f9fa;
+}
+
+/* Header */
+#header {
+  background-color: #000;
+  /* Fondo negro */
+  text-align: center;
+  /* Centrar contenido */
+  padding: 15px 0;
+  /* Espaciado arriba y abajo */
+}
+
+/* Logo */
+#logo {
+  width: 120px;
+  /* Tamaño reducido del logo */
+  height: auto;
+  /* Mantiene la proporción */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Fondo del navbar */
+#navbar {
+  background-color: #767475;
+  /* Negro */
+  border-bottom: 2px solid #FFD700;
+  /* Línea dorada */
+}
+
+/* Marca de la empresa */
+#navbar-brand {
+  color: #FFD700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#navbar-brand:hover {
+  color: #C0C0C0;
+  /* Plateado */
+}
+
+/* Lista de enlaces */
+#nav-list .nav-link {
+  color: #FFD700;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Hover en enlaces */
+#nav-list .nav-link:hover {
+  color: #fff;
+  border-bottom: 2px solid #FFD700;
+}
+
+/* Activo / Click */
+#nav-list .nav-link:active {
+  color: #C0C0C0;
+}
+
+/* Fondo general */
+#main {
+  background-color: #fff;
+  /* Fondo blanco */
+  padding: 40px 0;
+}
+
+/* Carrusel */
+#hero img {
+  border: 3px solid #FFD700;
+  /* Borde dorado */
+  border-radius: 25px;
+  /* Más redondeado */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Misión y Visión */
+#mission,
+#vision {
+  margin-top: 100px;
+  color: #333;
+  /* Texto oscuro para contraste */
+}
+
+#mission h3,
+#vision h3 {
+  color: #FFD700;
+  /* Títulos dorados */
+  font-weight: bold;
+}
+
+#mission p,
+#vision p {
+  color: #555;
+  /* Texto gris */
+  line-height: 1.6;
+}
+
+/* Opcional: efecto hover elegante en bloques */
+#mission .border,
+#vision .border {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#mission .border:hover,
+#vision .border:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===== Footer Base ===== */
+#footer {
+  background: #000;
+  color: #C0C0C0;
+  padding: 36px 0 16px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp .6s ease-out both;
+}
+
+#footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Borde superior dorado animado */
+#footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FFD700, transparent);
+  animation: sweep 4s linear infinite;
+  opacity: .9;
+}
+
+/* ===== Grid ===== */
+#footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr .9fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  #footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  #footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Brand ===== */
+#footer-brand h4 {
+  color: #FFD700;
+  margin: 0 0 8px;
+  letter-spacing: .5px;
+}
+
+#footer-brand p {
+  margin: 0;
+  color: #C0C0C0;
+}
+
+/* ===== Links ===== */
+#footer-links h5,
+#footer-contact h5,
+#footer-social h5 {
+  color: #FFD700;
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  letter-spacing: .3px;
+}
+
+#footer-links ul,
+#footer-contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-links li {
+  margin: 6px 0;
+}
+
+#footer-links a {
+  color: #C0C0C0;
+  text-decoration: none;
+  transition: color .25s, text-shadow .25s;
+}
+
+#footer-links a:hover {
+  color: #FFFFFF;
+  text-shadow: 0 0 8px rgba(255, 215, 0, .6);
+}
+
+/* ===== Contacto ===== */
+#footer-contact .label {
+  color: #FFFFFF;
+  margin-right: 6px;
+}
+
+#footer-contact a {
+  color: #C0C0C0;
+  text-decoration: none;
+}
+
+#footer-contact a:hover {
+  color: #FFFFFF;
+}
+
+/* ===== Redes ===== */
+#social-list {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: #C0C0C0;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 50%;
+  transition: transform .25s, color .25s, box-shadow .25s, border-color .25s;
+}
+
+.social:hover {
+  transform: translateY(-3px) scale(1.05);
+  color: #FFD700;
+  border-color: #FFD700;
+  box-shadow: 0 0 14px rgba(255, 215, 0, .35);
+}
+
+/* ===== Copy ===== */
+#footer-copy {
+  text-align: center;
+  margin: 18px 0 0;
+  color: #9E9E9E;
+  font-size: .92rem;
+  letter-spacing: .4px;
+}
+
+#footer-copy .brand {
+  color: #FFD700;
+}
+
+/* ===== Animaciones ===== */
+@keyframes sweep {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
