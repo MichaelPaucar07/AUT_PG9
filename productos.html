@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,166 +8,240 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-<header class="py-3 text-center">
-  <div class="logo-box mx-auto">LOGO</div>
-</header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-bottom">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">D'LUX AUTOS</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-      aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto gap-lg-3">
-        <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
-        <li class="nav-item"><a class="nav-link disabled" aria-disabled="true" href="#">NOSOTROS</a></li>
-        <li class="nav-item"><a class="nav-link disabled" aria-disabled="true" href="#">EQUIPO</a></li>
-        <li class="nav-item"><a class="nav-link disabled" aria-disabled="true" href="#">CLIENTES</a></li>
-        <li class="nav-item"><a class="nav-link" href="productos.html">PRODUCTOS</a></li>
-        <li class="nav-item"><a class="nav-link" href="promociones.html">PROMOCIONES</a></li>
-        <li class="nav-item"><a class="nav-link" href="sucursales.html">SUCURSALES</a></li>
-        <li class="nav-item"><a class="nav-link disabled" aria-disabled="true" href="#">LOGIN</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<main class="py-4">
-<div class="container">
-
-  <h2 class="text-center mb-3">"PRODUCTOS"</h2>
-  <div class="row gy-4">
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod0/240" alt="Producto 1">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1000</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 1</p>
-        <p class="mb-1">Cantidad en stock<br> 5</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $20990.00</p>
+  <header id="header">
+    <img src="icons/logo.jpg" alt="D'LUX AUTOS" id="logo">
+  </header>
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a id="navbar-brand" class="navbar-brand fw-bold" href="index.html">D'LUX AUTOS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul id="nav-list" class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">PRODUCTOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="promociones.html">PROMOCIONES</a></li>
+          <li class="nav-item"><a class="nav-link" href="sucursales.html">SUCURSALES</a></li>
+        </ul>
       </div>
     </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod1/240" alt="Producto 2">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1001</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 2</p>
-        <p class="mb-1">Cantidad en stock<br> 6</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $21740.00</p>
+  </nav>
+  <main class="py-4">
+    <div class="container">
+      <h2 class="text-center mb-3">PRODUCTOS</h2>
+      <div class="row g-5">
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/corolla.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/1.jpg" alt="Toyota Corolla 2.0 SE 2022">
+            </a>
+            <div class="small">
+              <p class="mb-1"><br> DLX-1000</p>
+              <p class="mb-1"><strong>Toyota Corolla 2.0 SE (2022)</strong></p>
+              <p class="mb-1">5 disponibles</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"> <strong>$22,490.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/civic.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/2.jpg" alt="Honda Civic Sport 2023">
+            </a>
+            <div class="small">
+              <p class="mb-1"><br> DLX-1001</p>
+              <p class="mb-1"><strong>Honda Civic Sport (2023)</strong></p>
+              <p class="mb-1">6 disponibles</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$25,490.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/cx5.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/3.jpg" alt="Mazda CX-5 Touring 2022">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1002</p>
+              <p class="mb-1"><strong>Mazda CX-5 Touring (2022)</strong></p>
+              <p class="mb-1"> 7</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$28,990.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/tucson.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/4.jpg" alt="Hyundai Tucson GLS 2023">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1003</p>
+              <p class="mb-1"><strong>Hyundai Tucson GLS (2023)</strong></p>
+              <p class="mb-1"> 8</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$30,490.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/sentra.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/5.jpg" alt="Nissan Sentra SR 2022">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1004</p>
+              <p class="mb-1"><strong>Nissan Sentra SR (2022)</strong></p>
+              <p class="mb-1"> 9</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$23,990.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/sportage.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/6.jpg" alt="Kia Sportage EX 2023">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1005</p>
+              <p class="mb-1"><strong>Kia Sportage EX (2023)</strong></p>
+              <p class="mb-1"> 10</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$27,740.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/huracan.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/7.jpg" alt="Lamborghini Huracán EVO 2021">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1006</p>
+              <p class="mb-1"><strong>Lamborghini Huracán EVO (2021)</strong></p>
+              <p class="mb-1"> 2</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$289,000.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/488gtb.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/8.jpg" alt="Ferrari 488 GTB 2019">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1007</p>
+              <p class="mb-1"><strong>Ferrari 488 GTB (2019)</strong><br> </p>
+              <p class="mb-1"> 1 disponibles</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$259,000.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="img/productos/911turbo.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/9.jpg" alt="Porsche 911 Turbo S 2020">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1008</p>
+              <p class="mb-1"><strong>Porsche 911 Turbo S (2020)</strong><br> </p>
+              <p class="mb-1">1 disponibles</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"> <strong>$226,000.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 offset-md-4">
+          <div class="product-item">
+            <a href="img/productos/f8tributo.jpg" target="_blank" rel="noopener">
+              <img class="product-img" src="img/productos/10.jpg" alt="Ferrari F8 Tributo 2020">
+            </a>
+            <div class="small">
+              <p class="mb-1">DLX-1009</p>
+              <p class="mb-1"><strong>Ferrari F8 Tributo (2020)</strong></p>
+              <p class="mb-1">1 disponibles</p>
+              <p class="mb-1">15% IVA</p>
+              <p class="mb-0"><strong>$315,000.00</strong></p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod2/240" alt="Producto 3">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1002</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 3</p>
-        <p class="mb-1">Cantidad en stock<br> 7</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $22490.00</p>
+  </main>
+  <footer id="footer">
+    <div id="footer-inner" class="container">
+      <div id="footer-grid">
+        <div id="footer-brand">
+          <h4>D'LUX AUTOS</h4>
+          <p>Movilidad premium con servicio de excelencia y cobertura nacional.</p>
+        </div>
+        <nav id="footer-links">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+          </ul>
+        </nav>
+        <div id="footer-contact">
+          <h5>Contacto</h5>
+          <ul>
+            <li><span class="label">Tel:</span> <a href="tel:+593999999999">+593 99 999 9999</a></li>
+            <li><span class="label">Email:</span> <a href="mailto:info@dluxautos.ec">info@dluxautos.ec</a></li>
+            <li><span class="label">Dir:</span> Av. 11 Noviembre, Riobamba, Ecuador</li>
+          </ul>
+        </div>
+        <div id="footer-social">
+          <h5>Síguenos</h5>
+          <div id="social-list">
+            <a class="social" href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.02 3.66 9.18 8.44 9.98v-7.06H7.9v-2.92h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.22.2 2.22.2v2.45h-1.25c-1.23 0-1.62.76-1.62 1.54v1.86h2.76l-.44 2.92h-2.32v7.06C18.34 21.24 22 17.08 22 12.06z" />
+              </svg>
+            </a>
+            <a class="social" href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
+              </svg>
+            </a>
+            <a class="social" href="#" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.5 3.5A11.43 11.43 0 0 0 12 0a11.7 11.7 0 0 0-11.7 11.7A11.5 11.5 0 0 0 0 17.4L1.7 24l6.8-1.8a11.7 11.7 0 0 0 17.5-10.5 11.4 11.4 0 0 0-5.5-8.2zM12 21.1a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-4 .9.9-3.9-.2-.3A9.5 9.5 0 1 1 21.5 12 9.5 9.5 0 0 1 12 21.1zm5-6.9c-.3-.2-1.6-.8-1.8-.8s-.4-.1-.6.2-.7.8-.8 1-.3.2-.6.1a7.7 7.7 0 0 1-2.3-1.4 8.7 8.7 0 0 1-1.6-2c-.2-.3 0-.5.1-.7s.3-.4.4-.6a2.2 2.2 0 0 0 .2-.6.6.6 0 0 0-.1-.6c-.2-.2-.6-1.4-.9-2s-.5-.5-.7-.5h-.6a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.6 11.5 11.5 0 0 0 4.5 4 15.4 15.4 0 0 0 1.5.6 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.2-.3-.2-.6-.4z" />
+              </svg>
+            </a>
+            <a class="social" href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19 3.5 12 3.5 12 3.5s-7 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1C5 20.5 12 20.5 12 20.5s7 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.7 15.5v-7l6.3 3.5-6.3 3.5z" />
+              </svg>
+            </a>
+            <a class="social" href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M21 8.1a7 7 0 0 1-4.6-2V16a5.9 5.9 0 1 1-5.9-5.9 6 6 0 0 1 1.1.1V7.1a9.6 9.6 0 0 0-1.1-.1A8.9 8.9 0 1 0 19.4 16V9.9a10 10 0 0 0 4.6 1.2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
+      <p id="footer-copy">
+        © 2025 <span class="brand">D'LUX AUTOS</span>
+      </p>
     </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod3/240" alt="Producto 4">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1003</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 4</p>
-        <p class="mb-1">Cantidad en stock<br> 8</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $23240.00</p>
-      </div>
-    </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod4/240" alt="Producto 5">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1004</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 5</p>
-        <p class="mb-1">Cantidad en stock<br> 9</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $23990.00</p>
-      </div>
-    </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod5/240" alt="Producto 6">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1005</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 6</p>
-        <p class="mb-1">Cantidad en stock<br> 10</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $24740.00</p>
-      </div>
-    </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod6/240" alt="Producto 7">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1006</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 7</p>
-        <p class="mb-1">Cantidad en stock<br> 11</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $25490.00</p>
-      </div>
-    </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod7/240" alt="Producto 8">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1007</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 8</p>
-        <p class="mb-1">Cantidad en stock<br> 5</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $26240.00</p>
-      </div>
-    </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod8/240" alt="Producto 9">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1008</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 9</p>
-        <p class="mb-1">Cantidad en stock<br> 6</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $26990.00</p>
-      </div>
-    </div>
-    
-
-    <div class="col-lg-6 d-flex align-items-center gap-3">
-      <img class="product-img flex-shrink-0" src="https://picsum.photos/seed/prod9/240" alt="Producto 10">
-      <div class="small">
-        <p class="mb-1"><strong>CODIGO</strong><br> DLX-1009</p>
-        <p class="mb-1"><strong>NOMBRE DE PRODUCTO</strong><br> Auto modelo 10</p>
-        <p class="mb-1">Cantidad en stock<br> 7</p>
-        <p class="mb-1">IVA (15% - 0%)</p>
-        <p class="mb-0">Precio<br> $27740.00</p>
-      </div>
-    </div>
-    
-  </div>
-  <p class="text-danger text-center mt-4 fw-bold">(MINIMO PRESENTAR 10 PRODUCTOS)</p>
-
-</div>
-</main>
-<footer class="py-4 bg-light border-top">
-  <div class="container text-center small">
-    © 2025 D'LUX AUTOS — Práctica HTML & CSS
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
