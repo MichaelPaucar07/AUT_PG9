@@ -670,3 +670,44 @@ h2 {
 }
 
 /* Tip extra: si alguna imagen no está 1:1 se verá bien por object-fit */
+
+
+
+/* ====== Sucursales ====== */
+
+.branch-img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #f1f3f5;
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+  transition:transform .25s ease;
+}
+.branch-img:hover{ transform:scale(1.05); }
+
+/* Tarjeta info sucursal */
+.branch-card{
+  background:#ffffff;
+  border:1px solid #e9ecef;
+  border-radius:15px;
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+  transition:.25s ease;
+}
+.branch-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+  border-color:#dee2e6;
+}
+
+/* Texto */
+.branch-card p{
+  font-size:.95rem;
+  margin:0;
+  line-height:1.3;
+}
+.branch-card .fw-semibold{
+  color:#d4af37; /* dorado como en productos */
+  text-transform:uppercase;
+  font-weight:700;
+}
