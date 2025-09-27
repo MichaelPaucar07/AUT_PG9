@@ -370,3 +370,197 @@ h2 {
     }
   }
 }
+
+
+
+/* PROMOCIONES*/
+
+/* ===== Sección PROMOCIONES ===== */
+#promos-main {
+  background: #fff;
+  /* fondo blanco */
+  padding: 40px 0;
+}
+
+#promos-title {
+  color: #111;
+  letter-spacing: .5px;
+  animation: fadeDown .6s ease-out both;
+}
+
+#promos-grid>[class*="col-"] {
+  /* animación de aparición escalonada */
+  animation: cardIn .5s ease-out both;
+}
+
+#promos-grid>[class*="col-"]:nth-child(1) {
+  animation-delay: .05s;
+}
+
+#promos-grid>[class*="col-"]:nth-child(2) {
+  animation-delay: .10s;
+}
+
+#promos-grid>[class*="col-"]:nth-child(3) {
+  animation-delay: .15s;
+}
+
+#promos-grid>[class*="col-"]:nth-child(4) {
+  animation-delay: .20s;
+}
+
+#promos-grid>[class*="col-"]:nth-child(5) {
+  animation-delay: .25s;
+}
+
+#promos-grid>[class*="col-"]:nth-child(6) {
+  animation-delay: .30s;
+}
+
+#promos-grid>[class*="col-"]:nth-child(7) {
+  animation-delay: .35s;
+}
+
+/* Tarjeta de promo */
+.promo-card {
+  background: #fff;
+  border: 2px solid #eaeaea;
+  border-radius: 22px;
+  /* redondeado base */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, border-radius .25s ease;
+  overflow: hidden;
+  /* recorta el media redondeado */
+}
+
+/* Hover con borde dorado y más redondeado */
+.promo-card:hover {
+  transform: translateY(-6px);
+  border-color: #FFD700;
+  /* dorado */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+  border-radius: 28px;
+  /* ¡más redondo al hover! */
+}
+
+/* Cuerpo */
+.promo-body {
+  padding: 16px;
+}
+
+/* Título y precio */
+.promo-title {
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: .3px;
+}
+
+.promo-price {
+  color: #444;
+  margin-bottom: 14px;
+}
+
+/* Contenedor de imagen con tamaño uniforme */
+.promo-media {
+  border: 2px solid #eee;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  /* Relación 4:3 consistente */
+  aspect-ratio: 4 / 3;
+}
+
+/* Fallback si no hay aspect-ratio */
+@supports not (aspect-ratio: 4 / 3) {
+  .promo-media {
+    height: 220px;
+  }
+}
+
+/* Imagen siempre a un tamaño uniforme y recortada */
+.promo-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* recorte centrado */
+  object-position: center;
+  display: block;
+  transition: transform .35s ease;
+}
+
+/* Efecto zoom sutil en hover */
+.promo-card:hover .promo-media img {
+  transform: scale(1.05);
+}
+
+/* Animaciones clave */
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accesibilidad: respeta reduce motion */
+@media (prefers-reduced-motion: reduce) {
+
+  #promos-grid>[class*="col-"],
+  .promo-card,
+  .promo-media img,
+  #promos-title {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+
+/* Botón de Oferta en Promociones */
+.promo-offer-btn {
+  background: #ff0004;
+  /* Dorado */
+  color: #111;
+  /* Texto oscuro */
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  /* Bien redondeado */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.promo-offer-btn:hover {
+  background: #111;
+  /* Negro */
+  color: #FFD700;
+  /* Dorado */
+  transform: scale(1.05);
+  /* Zoom sutil */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.promo-offer-btn:active {
+  transform: scale(0.97);
+  /* efecto click */
+}
